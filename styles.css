@@ -1,0 +1,45 @@
+* { box-sizing: border-box; }
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
+  color: #142033;
+  background: #f4f7fb;
+}
+body { margin: 0; min-height: 100vh; }
+.app { max-width: 720px; margin: auto; padding: max(18px, env(safe-area-inset-top)) 16px 30px; }
+.topbar { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:14px; }
+.eyebrow { margin:0 0 4px; font-size:11px; font-weight:800; letter-spacing:.12em; color:#66758a; }
+h1 { margin:0; font-size:25px; line-height:1.1; letter-spacing:-.03em; }
+h1 span { color:#7c8796; font-weight:500; }
+h2 { margin:0; font-size:19px; }
+.icon-button { border:0; background:white; width:44px; height:44px; border-radius:50%; font-size:26px; box-shadow:0 2px 10px #16203314; }
+.status { padding:12px 14px; border-radius:14px; background:#e9f0ff; color:#244d9b; margin-bottom:14px; font-size:14px; }
+.hero { background:linear-gradient(145deg,#0b5cff,#4788ff); color:white; border-radius:24px; padding:20px; box-shadow:0 12px 30px #0b5cff26; margin-bottom:22px; }
+.hero-grid { display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:10px; }
+.hero-city { text-align:center; }
+.hero-city .name { font-weight:700; font-size:15px; }
+.hero-city .temp { font-size:44px; font-weight:800; letter-spacing:-.05em; margin:3px 0; }
+.hero-city .condition { font-size:13px; opacity:.9; }
+.vs { font-weight:800; opacity:.7; }
+.winner { margin-top:16px; padding-top:14px; border-top:1px solid #ffffff40; text-align:center; font-size:14px; font-weight:700; }
+.section-heading { display:flex; justify-content:space-between; align-items:end; margin:0 2px 10px; }
+.section-heading span { font-size:11px; color:#7a8798; }
+.forecast { display:grid; gap:10px; }
+.day-card { background:white; border-radius:19px; padding:14px; box-shadow:0 2px 12px #1620330b; }
+.day-title { font-weight:750; margin-bottom:11px; }
+.columns { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+.city { padding:12px; background:#f7f9fc; border-radius:14px; }
+.city-head { display:flex; justify-content:space-between; gap:8px; align-items:center; }
+.city-name { font-weight:700; font-size:14px; }
+.icon { font-size:24px; }
+.temps { font-size:23px; font-weight:800; margin:5px 0 2px; }
+.meta { font-size:12px; color:#69778a; line-height:1.55; }
+.diff { margin-top:10px; text-align:center; font-size:12px; color:#536277; }
+footer { text-align:center; color:#8290a1; font-size:11px; padding:24px 0 8px; }
+.install { border:0; background:#0b5cff; color:white; border-radius:12px; padding:10px 14px; font-weight:700; margin-top:8px; }
+.hidden { display:none !important; }
+@media (max-width:420px) {
+  h1 { font-size:22px; }
+  .columns { gap:7px; }
+  .city { padding:10px; }
+  .temps { font-size:21px; }
+}

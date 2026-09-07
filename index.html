@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b5cff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Weather Compare">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <title>Weather Compare</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">DAILY WEATHER</p>
+        <h1>Hilton Head <span>vs.</span> Pittsburgh</h1>
+      </div>
+      <button id="refresh" class="icon-button" aria-label="Refresh weather">↻</button>
+    </header>
+
+    <section id="status" class="status">Loading forecast…</section>
+
+    <section id="today" class="hero hidden"></section>
+
+    <section class="forecast-section">
+      <div class="section-heading">
+        <h2>7-day comparison</h2>
+        <span id="updated"></span>
+      </div>
+      <div id="forecast" class="forecast"></div>
+    </section>
+
+    <footer>
+      <p>Weather data from Open-Meteo.</p>
+      <button id="install" class="install hidden">Add to Home Screen</button>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
